@@ -1,0 +1,56 @@
+:root {
+  --brand-dark: #0d2c54;
+  --brand: #1b6ca8;
+}
+
+body {
+  background: #f4f6fb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main { flex: 1 0 auto; }
+
+.navbar-brand span { color: #6cb8ff; }
+
+.hero {
+  background: linear-gradient(135deg, var(--brand-dark), var(--brand));
+  color: #fff;
+  padding: 3.5rem 0 5.5rem;
+}
+.hero p { max-width: 640px; margin-inline: auto; opacity: .9; }
+
+.card-ricerca {
+  margin-top: -3rem;
+  border: 0;
+  box-shadow: 0 .75rem 2rem rgba(13, 44, 84, .15);
+}
+
+.card { border: 0; box-shadow: 0 .25rem 1rem rgba(13, 44, 84, .08); }
+
+.punteggio-grande { font-size: 3rem; font-weight: 700; line-height: 1; }
+
+.progress { height: .9rem; }
+.progress.sottile { height: .5rem; min-width: 80px; }
+
+.checks .list-group-item { padding: 1rem 1.25rem; }
+.checks .simbolo {
+  width: 2rem; height: 2rem; flex: 0 0 2rem;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 50%; font-weight: 700;
+}
+.checks .punti { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.cella-sito { max-width: 380px; }
+.cella-sito a { color: #6c757d; text-decoration: none; }
+.cella-sito a:hover { text-decoration: underline; }
+
+.stat-card .numero { font-size: 1.75rem; font-weight: 700; }
+
+footer { flex-shrink: 0; }
+
+@media (max-width: 575.98px) {
+  .hero { padding: 2.5rem 0 4.5rem; }
+  .punteggio-grande { font-size: 2.25rem; }
+  .cella-sito { max-width: 200px; }
+}
